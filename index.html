@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="David Ma">
+	<title>David Ma</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<style>
+		@font-face {
+			font-family: PixelifySans;
+			src: url(assets/PixelifySans-Regular.ttf);
+		}
+
+		@keyframes cursor-blink {
+			0%  { opacity: 0; }
+			50% { opacity: 1; }
+		}
+
+		body {
+			background-color: #5fcde4;
+		}
+
+		.content {
+			align-items: center;
+			color: #eeffff;
+			display: flex;
+			flex-direction: row;
+			font-family: PixelifySans;
+			font-size: min(9vw, 9vh);
+			height: 100vh;
+			justify-content: center;
+			overflow: hidden;
+			word-wrap: break-word;
+		}
+
+		.disclaimer {
+			margin: 44px;
+			max-width: min(100vw, 100vh);
+		}
+
+		.disclaimer::after {
+			animation: cursor-blink 1.5s step-end infinite;
+			aspect-ratio: 1/2;
+			background-color: #eeffff;
+			content: "";
+			display: inline-block;
+			height: min(9vw, 9vh);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="content">
+		<span class="disclaimer">Under Construction...</span>
+	</div>
+</body>
